@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEB841"
+    tools:context=".PostLostItemFormActivity">
+
+    <View
+        android:id="@+id/idHeaderView"
+        android:layout_width="413dp"
+        android:layout_height="68dp"
+        android:background="#37323E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/idHeaderTextView"
+        android:layout_width="310dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:ems="8"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/textview"
+        android:textAllCaps="false"
+        android:textColor="#B0FE76"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck"
+        tools:text="Seek And You Shall Find" />
+
+    <TextView
+        android:id="@+id/idPostTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/post_type"
+        android:textColor="#37323E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idHeaderView" />
+
+    <RadioGroup
+        android:id="@+id/idRadioGroupLostOrFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idHeaderView">
+
+        <RadioButton
+            android:id="@+id/idLostRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/lost" />
+
+        <RadioButton
+            android:id="@+id/idFoundRadioBtn"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="100dp"
+            android:text="@string/found" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/idNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="@string/name_input"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:singleLine="true"
+        android:soundEffectsEnabled="true"
+        android:textAlignment="viewStart"
+        android:textColorHint="#5D4037"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="LabelFor,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/idItemDescription"
+        android:layout_width="211dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="36dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/description"
+        android:inputType="text"
+        android:textAlignment="viewStart"
+        android:textColorHint="#5D4037"
+        app:layout_constraintBottom_toTopOf="@+id/idEditTextDate"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/idEditTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="36dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/date"
+        android:inputType="date"
+        android:textAlignment="viewStart"
+        android:textColorHint="#5D4037"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textAlignment="viewStart"
+        android:textColorHint="#5D4037"
+        app:layout_constraintBottom_toTopOf="@+id/idItemDescription"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/idSavePostBtn"
+        android:layout_width="89dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#37323E"
+        android:hapticFeedbackEnabled="false"
+        android:soundEffectsEnabled="true"
+        android:text="@string/save"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/idFooterView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/idFooterView"
+        android:layout_width="411dp"
+        android:layout_height="72dp"
+        android:background="#37323E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/idFooterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/github_com_returnmarcco"
+        android:textColor="#B0FE76"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/idFooterView"
+        app:layout_constraintTop_toTopOf="@+id/idFooterView"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="9dp"
+        android:text="@string/location_of_item"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="333dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/idSavePostBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/idAutocompleteLocationFragment"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#37323E"
+            android:orientation="horizontal" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

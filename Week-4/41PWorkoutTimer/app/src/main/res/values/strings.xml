@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">4.1P-Workout-Timer</string>
+    <string name="run_fatty_run">Run, Fatty, Run!</string>
+    <string name="github_com_returnmarcco">© github.com/returnMarcco</string>
+    <string name="the_fat_shaming_workout_timer">The Fat-Shaming Workout Timer</string>
+    <string name="start_stop">Start/Stop</string>
+    <string name="rest_period_duration">Rest Period Duration</string>
+    <string name="workout_duration">Workout Duration</string>
+    <string name="number_of_sets">Number of Sets</string>
+    <string name="workout_progress">Workout Progress</string>
+    <string name="start">START</string>
+    <string name="fat_man_eating_burgers_and_fries">Fat man eating burgers and fries.</string>
+</resources>

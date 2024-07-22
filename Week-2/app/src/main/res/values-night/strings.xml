@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="intellivert">IntelliVert</string>
+    <string name="unit_to_convert">Unit to Convert</string>
+    <string name="input">Input a value to convert</string>
+    <string name="convert">Convert</string>
+    <string name="source_unit">Source Unit</string>
+    <string name="target_unit">Target Unit</string>
+</resources>
